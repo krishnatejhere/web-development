@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Audio player</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .header{
+            background-color: gray;
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            align-items: center;
+        }
+        .header a{
+            text-decoration: none;
+            background-color: white;
+            margin-right: 40px;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 30px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: gray;
+            transition: all 0.5s;
+        }
+        .content{
+            margin-top: 150px; 
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .header a:hover{
+            background-color: black;
+            color: white
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="right-section">
+            <a href="home.html" >HOME</a>
+            <a href="video.html" >VIDEO</a>
+            <a href="music.html" >MUSIC</a>
+        </div>
+        <div class="left-section">
+            <a href="code.html" target="_blank">CODE</a>
+        </div>
+      </div>
+      <marquee behavior="scroll" direction="left">Welcome to my mini project by batch 4(Machine Learning): MPCs A</marquee>
+      <div class="content">
+        <a href="video.html"><img src="play.png" alt="Video Player" width="300"></a>
+        <a href="music.html"><img src="headphones.png" alt="Audio Player" width="300"></a>
+      </div>
+</body>
+</html>
