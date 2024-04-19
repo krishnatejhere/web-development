@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rectangle slider</title>
+    <style>
+        .rect{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            width: 800px;
+            height: 320px;
+            background-color: rgb(255, 255, 255);
+            border-top: 10px solid red;
+            border-bottom: 10px solid blue;
+            border-left: 10px solid green;
+            border-right: 10px solid yellow;
+            animation: border 5s linear infinite;
+            filter: blur(30px);
+        }
+
+        @keyframes border{
+            0%{
+                border-top: 5px solid red;
+            border-bottom: 10px solid blue;
+            border-left: 10px solid green;
+            border-right: 10px solid yellow;
+            }
+            25%{
+                border-top: 10px solid yellow;
+            border-bottom: 5px solid red;
+            border-left: 10px solid blue;
+            border-right: 10px solid green;
+            }
+            50%{
+                border-top: 10px solid green;
+            border-bottom: 10px solid yellow;
+            border-left: 5px solid red;
+            border-right: 10px solid blue;
+            }
+            75%{
+                border-top: 10px solid blue;
+            border-bottom: 10px solid green;
+            border-left: 10px solid yellow;
+            border-right: 5px solid red;
+            }
+            100%{
+                border-top: 5px solid red;
+            border-bottom: 10px solid blue;
+            border-left: 10px solid green;
+            border-right: 10px solid yellow;
+            }
+        }
+        .rectangle{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            width: 800px;
+            height: 320px;
+            background-image: url("music posters/AURORA\ -\ Runaway\ -\ 1280x720.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border:1px solid white;
+        }
+        #audio{
+            pos
+        }
+    </style>
+</head>
+<body bgcolor="black">
+    <div class="rect"></div>
+    <div class="rectangle"></div>
+    <audio id="audio" src="music/AURORA - Runaway (Lyrics) - 128.mp3" controls></audio>
+</body>
+</html>

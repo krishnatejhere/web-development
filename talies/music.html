@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="css/music.css">
+    <link rel="icon" href="icons/logo.ico" type="image/x-icon"/>
+</head>
+<body>
+    <header>
+        <div class="right-section">
+            <div class="logo">
+                <a href="home-page.html"><img src="icons/logo.png" alt="Logo"></a>
+            </div>
+            <div class="search">
+                <input id="music-search" type="text" placeholder="Search media...">
+                <button>🔍</button>
+            </div>
+        </div>
+
+        <div class="login">
+            <button id="register">Register</button>
+            <button id="login">Login</button>
+        </div>
+    </header>
+    <main>
+        <div class="music-player">
+            <h1 id="music-name">Bella Ciao</h1>
+            <img id="album-cover" src="music posters/Bella Ciao - La Casa de Papel - 1280x720.jpg" alt="Album Cover">
+            <audio id="audio-player" autoplay>
+                <source src="music/Bella ciao - Italian Anti-fascist Song - 128.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            
+            <input type = "range" id="progress-bar" min="0" max="100" value="0">
+            <div class="time">
+                <span id="current-time">00:00</span>
+                <span id="duration">00:00</span>
+            </div>
+            <div class="controls">
+                <button id="prev" onclick="previous()"><img src="icons/prev.png" alt="Previous"></button>
+                <button id="play-pause" onclick="playPause()">
+                    <svg width="80" height="80" xmlns="http://www.w3.org/2000/svg"><!-- Circle --><circle cx="40" cy="40" r="30" fill="white" /><!-- Triangle --><polygon points="27.5,20 60,40 27.5,60" fill="black" /></svg>
+                </button>
+                <button id="next" onclick="next()"><img src="icons/next.png" alt="Next"></button>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Machine Learning MPCs - A (Batch 4) All Rights Reserved.</p>
+        <marquee behavior="scroll" direction="left">Designed by <strong>Krishna Tej</strong> (Batch 4)</marquee>
+    </footer>
+
+    <script src="js/music.js">
+    </script>
+</body>
+</html>
